@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "589001729748",
+    "project_id": "wwhlisting",
+    "storage_bucket": "wwhlisting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589001729748:android:9ee217a1f9b730409abd41",
+        "android_client_info": {
+          "package_name": "com.wwh.listing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589001729748-6h2dmnhbmg5di1tpp5u9dpneb6qdq45j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2oTe9kOUld3Wsicn6SrrAZS2oVTsfow8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589001729748-6h2dmnhbmg5di1tpp5u9dpneb6qdq45j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "589001729748-gi3irmvuv74lo4bjaneh1j7lorebdge2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.wwh.listing"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
