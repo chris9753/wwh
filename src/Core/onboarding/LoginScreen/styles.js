@@ -6,9 +6,9 @@ import TNColor from '../../truly-native/TNColor';
 const dynamicStyles = (appStyles, colorScheme) => {
   return StyleSheet.create({
     container: {
-      flex: 1,
-      alignItems: 'center',
-      backgroundColor: appStyles.colorSet[colorScheme].mainThemeBackgroundColor,
+      // flex: 1,
+      // alignItems: 'center',
+      // backgroundColor: appStyles.colorSet[colorScheme].mainThemeBackgroundColor,
     },
     orTextStyle: {
       color: appStyles.colorSet[colorScheme].mainTextColor,

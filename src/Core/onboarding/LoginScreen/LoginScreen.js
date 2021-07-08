@@ -13,7 +13,10 @@ import { useColorScheme } from 'react-native-appearance';
 import { setUserData } from '../redux/auth';
 import { localizedErrorMessage } from '../utils/ErrorCode';
 
-function LoginScreen(props) {
+
+
+
+const LoginScreen = (props) => {
     const [pwdView, setPwdView] = useState(true);
     const appConfig = props.route.params.appConfig;
     const authManager = props.route.params.authManager;
@@ -23,7 +26,7 @@ function LoginScreen(props) {
     const [password, setPassword] = useState('');
     const appStyles = props.route.params.appStyles;
     const colorScheme = useColorScheme();
-    const styles = dynamicStyles(appStyles, colorScheme);
+    // const styles = dynamicStyles(appStyles, colorScheme);
 
     const setPasswordView = () => {
         setPwdView(!pwdView);
@@ -72,8 +75,8 @@ function LoginScreen(props) {
     return (
         <Container>
             <KeyboardAwareScrollView
-                keyboardShouldPersistTaps="always"
-                style={styles.container}
+                // keyboardShouldPersistTaps="always"
+                // style={styles.container}
                 contentContainerStyle={{ display: 'flex', justifyContent: 'center', alignItems: "center", flexDirection: 'column', flex: 1 }}
             >
                 <TouchableOpacity
@@ -85,7 +88,7 @@ function LoginScreen(props) {
                     />
                 </TouchableOpacity>
                 <View style={styles.logoView}>
-                    <Image style={styles.logoImage} source={props.appStyles.iconSet.logo} />
+                    <Image style={styles.logoImage} source={appStyles.iconSet.logo} />
                 </View>
                 <View style={styles.formGroup}>
                     <View>
@@ -149,7 +152,8 @@ function LoginScreen(props) {
             </KeyboardAwareScrollView>
         </Container>
     );
-}
+
+};
 
 const styles = StyleSheet.create({
 
