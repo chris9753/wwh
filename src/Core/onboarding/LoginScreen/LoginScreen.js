@@ -76,7 +76,7 @@ const LoginScreen = (props) => {
         <Container>
             <KeyboardAwareScrollView
                 // keyboardShouldPersistTaps="always"
-                // style={styles.container}
+                style={styles.container}
                 contentContainerStyle={{ display: 'flex', justifyContent: 'center', alignItems: "center", flexDirection: 'column', flex: 1 }}
             >
                 <TouchableOpacity
